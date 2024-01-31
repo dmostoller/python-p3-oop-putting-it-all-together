@@ -25,11 +25,11 @@ class Shoe():
         if type(new_size) == int:            
             self._size = new_size
         else:
-            raise Exception("size must be an integer")
+            raise ValueError("size must be an integer")
 
     def cobble(self):
         self.condition = "New"
-        print("Your show is as good as new")
+        print("Your shoe is as good as new")
 
 stan_smith = Shoe("Adidas", 9)
 

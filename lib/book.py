@@ -24,7 +24,7 @@ class Book():
         if type(new_page_count) == int:
             self._page_count = new_page_count
         else:
-            raise Exception("page_count must be an integer")
+            raise ValueError("not an integer")
     
     def turn_page(self):
         print("Flipping the page...wow, you read fast!")
